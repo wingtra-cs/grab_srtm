@@ -52,7 +52,7 @@ elif option == 'KML Upload':
     if uploaded:
 
         fname = kml_upload.name
-        supported_drivers['LIBKML'] = 'rw'
+        supported_drivers['KML'] = 'rw'
         input_kml = gpd.read_file(kml_upload, driver='KML')
         multi_poly = list(input_kml['geometry'])
         xx = []
