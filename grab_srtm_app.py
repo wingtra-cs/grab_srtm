@@ -1,3 +1,11 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install('GDAL-3.4.3-pp38-pypy38_pp73-win_amd64.whl')
+
 import geopandas as gpd
 import requests
 import streamlit as st
