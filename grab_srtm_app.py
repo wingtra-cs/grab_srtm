@@ -33,7 +33,7 @@ def convert2poly(multi):
 defined = False
 option = st.selectbox(
     'Select method for defining the bounds:',
-    ('<Method>', 'KML Upload', 'Manual Input'))
+    ('[Select Method]', 'KML Upload', 'Manual Input'))
 
 if option == 'Method':
     st.stop()
