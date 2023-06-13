@@ -1,8 +1,5 @@
 GDAL-3.4.3-pp38-pypy38_pp73-win_amd64.whl
 geopandas
-ee
-jupyter-server-proxy
-leafmap
 localtileserver
 nbserverproxy
 owslib
