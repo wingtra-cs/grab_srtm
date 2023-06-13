@@ -2,14 +2,11 @@ import subprocess
 import sys
 import requests
 
-loc = 'https://github.com/girder/large_image_wheels/raw/wheelhouse/GDAL-3.8.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=86bdb99f6481b6bc1751f55295b118fe18d1dba3d0327863bb16741f9ded7409'
-test = requests.get(loc)
-open('GDAL.whl', 'wb').write(test.content)
-
+GDAL = 'https://github.com/girder/large_image_wheels/raw/wheelhouse/GDAL-3.8.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=86bdb99f6481b6bc1751f55295b118fe18d1dba3d0327863bb16741f9ded7409'
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-install('GDAL.whl')
+install(GDAL)
 
 import geopandas as gpd
 import requests
