@@ -1,4 +1,4 @@
---find-links=https://girder.github.io/large_image_wheels GDAL
+--find-links=https://girder.github.io/large_image_wheels GDAL-3.3.0-cp39-cp39-manylinux2010_x86_64.whl  
 folium==0.13.0
 geemap[extra]
 geopandas
