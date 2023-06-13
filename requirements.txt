@@ -8,5 +8,6 @@ piexif
 pyproj
 rasterio
 scipy
+shapely
 streamlit
 streamlit-option-menu
