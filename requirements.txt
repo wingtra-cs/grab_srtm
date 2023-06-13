@@ -1,16 +1,16 @@
---find-links=https://girder.github.io/large_image_wheels GDAL-3.3.0-cp39-cp39-manylinux2010_x86_64.whl  
-folium==0.13.0
-geemap[extra]
+--find-links=https://girder.github.io/large_image_wheels GDAL
+# cartopy
+geemap
 geopandas
+ee
 jupyter-server-proxy
-keplergl
 leafmap
 localtileserver
 nbserverproxy
 owslib
 palettable
 plotly
-streamlit
+streamlit==1.12.2
 streamlit-bokeh-events
 streamlit-folium
-streamlit-keplergl
+tropycal
