@@ -7,6 +7,7 @@ from pyproj.aoi import AreaOfInterest
 from pyproj.database import query_utm_crs_info
 from osgeo import gdal
 from shapely.geometry import Polygon
+from fiona.drvsupport import supported_drivers
 
 st.set_page_config(layout="wide")
 
@@ -51,7 +52,7 @@ elif option == 'KML Upload':
     if uploaded:
 
         fname = kml_upload.name
-        gpd.io.file.fiona.drvsupport.supported_drivers['KML'] = 'rw'
+        supported_drivers['LIBKML'] = 'rw'
         input_kml = gpd.read_file(kml_upload, driver='KML')
         multi_poly = list(input_kml['geometry'])
         xx = []
