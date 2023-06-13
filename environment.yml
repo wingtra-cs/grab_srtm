@@ -10,8 +10,4 @@ dependencies:
       - streamlit
       - localtileserver
       - palettable
-      - streamlit-folium
-      - streamlit-keplergl
-      - streamlit-bokeh-events
-      - git+https://github.com/giswqs/leafmap
-      - git+https://github.com/giswqs/geemap
+      - osgeo
